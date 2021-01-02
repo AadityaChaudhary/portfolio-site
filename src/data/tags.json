@@ -1,0 +1,13 @@
+{
+	"Golang": "blue",
+	"GraphQL": "yellow",
+	"C++": "green",
+	"Python": "cyan",
+	"Java": "magenta",
+	"Flutter": "cyan",
+	"JavaScript": "green",
+	"Mongodb": "green",
+	"Dart": "green",
+	"Firebase": "green",
+	"SQL": "green"
+}
