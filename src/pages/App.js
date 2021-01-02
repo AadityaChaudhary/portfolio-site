@@ -2,7 +2,6 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import projects from '../data/projects.json';
 import tags from '../data/tags.json';
 import god from '../assets/placeholder.png';
 
@@ -18,7 +17,7 @@ function App(props) {
 				
 		  		<Grid item xs={5}>
 		  {/*	<Paper className="text-center"> image  </Paper>*/ }
-					<img src={god} class="rounded-3xl" />
+					<img src={god} alt="me"  class="rounded-3xl" />
 		  		</Grid>
 		   	
 		  		<Grid item xs={7}>
