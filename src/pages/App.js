@@ -8,20 +8,24 @@ import god from '../assets/placeholder.png';
 function App(props) {
 
   return (
-	<div class="my-5 bg-black">
+	<div class="py-5 bg-gray-300">
 		<Container className=" flex-grow" maxWidth="lg" >
 			<Grid container spacing={3}>
-				<Grid item xs={12}>
-					<Paper className="text-center"> This is a test </Paper>
+				<Grid item xs={12} className="bg-gradient-to-r from-green-400 to-blue-500 mx-5 my-5 rounded-lg">
+					<Paper className="text-left px-6 py-6"> 
+		  				<div className="text-6xl">
+		  					Aaditya Chaudhary 
+		  				</div>
+		  			</Paper>
 		  		</Grid>
-				
-		  		<Grid item xs={5}>
-		  {/*	<Paper className="text-center"> image  </Paper>*/ }
-					<img src={god} alt="me"  class="rounded-3xl" />
-		  		</Grid>
-		   	
-		  		<Grid item xs={7}>
-		  			<Paper className="text-center"> description </Paper>
+		  		<Grid container spacing={0} className="bg-gradient-to-r from-red-400 to-yellow-500 rounded-lg my-5 ">
+		  			<Grid item xs={4} className="px-6 py-6">
+						<img src={god} alt="me"  class="rounded-3xl " />
+		  			</Grid>
+		   		
+		  			<Grid item xs={8} className="px-6 py-6">
+		  				<Paper className="text-center"> description </Paper>
+		  			</Grid>
 		  		</Grid>
 			</Grid>
 	
