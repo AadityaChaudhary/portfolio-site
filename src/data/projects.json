@@ -2,42 +2,49 @@
 	{
 		"title" : "title",
 		"description" : " description",
-		"tags": ["golang", "graphql"]
+		"outline" : "from-green-400 to-blue-500",
+		"tags": ["Golang", "GraphQL"]
 	},
 	
 	{
 		"title" : "title",
 		"description" : " description",
-		"tags": ["golang", "graphql"]
+		"outline" : "from-green-400 to-blue-500",
+		"tags": ["Golang", "GraphQL"]
 	},
 	{
 		"title" : "title",
 		"description" : " description",
-		"tags": ["golang", "graphql"]
-	},
-
-	{
-		"title" : "title",
-		"description" : " description",
-		"tags": ["golang", "graphql"]
+		"outline" : "from-green-400 to-blue-500",
+		"tags": ["Golang", "GraphQL"]
 	},
 
 	{
 		"title" : "title",
 		"description" : " description",
-		"tags": ["golang", "graphql"]
+		"outline" : "from-green-400 to-blue-500",
+		"tags": ["Golang", "GraphQL"]
 	},
 
 	{
 		"title" : "title",
 		"description" : " description",
-		"tags": ["golang", "graphql"]
+		"outline" : "from-green-400 to-blue-500",
+		"tags": ["Golang", "GraphQL"]
 	},
 
 	{
 		"title" : "title",
 		"description" : " description",
-		"tags": ["golang", "graphql"]
+		"outline" : "from-green-400 to-blue-500",
+		"tags": ["Golang", "GraphQL"]
+	},
+
+	{
+		"title" : "title",
+		"description" : " description",
+		"outline" : "from-green-400 to-blue-500",
+		"tags": ["Golang", "GraphQL"]
 	}
 
 ]

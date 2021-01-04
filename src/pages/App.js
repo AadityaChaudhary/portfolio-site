@@ -39,19 +39,24 @@ function App(props) {
 }
 
 function Project(props) {
+	
+	var outline =  "bg-gradient-to-r " +  props.project.outline + " my-5  p-4 rounded-lg"; 
+	//console.log(outline);
 	return (
-		<Paper class="my-5 bg-white rounded-lg">
-			<div class="roboto text-left"> {props.project.title} </div>
-			<div class="roboto text-center"> {props.project.description} </div>
-			<Grid container spacing={3}>
-				<Grid item xs={1}>
-					<div class="roboto text-center"> Tags: </div>
+		<Grid item xs={12} class= { outline }>
+			<Paper class="px-5 py-5  bg-white rounded-lg">
+				<div class="roboto text-left"> {props.project.title} </div>
+				<div class="roboto text-center"> {props.project.description} </div>
+				<Grid container spacing={3}>
+					<Grid item xs={1}>
+						<div class="roboto text-center"> Tags: </div>
+					</Grid>
+					{props.project.tags.map(current_tag => (
+						<Tag key={current_tag} tag={current_tag} />
+					))}
 				</Grid>
-				{props.project.tags.map(current_tag => (
-					<Tag key={current_tag} tag={current_tag} />
-				))}
-			</Grid>
-		</Paper>
+			</Paper>
+		</Grid>
 	);
 }
 
