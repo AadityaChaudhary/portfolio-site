@@ -27,8 +27,13 @@ function App(props) {
 		  				<Paper className="text-center"> description </Paper>
 		  			</Grid>
 		  		</Grid>
+		  		<Grid item xs={12}>
+		  			<Paper class="font-bold text-3xl px-5 py-4 rounded-lg bg-white">
+		  				Projects:	
+		  			</Paper>
+		  		</Grid>
 			</Grid>
-	
+				
 			{props.projects.map(current_project => (
 				<Project project={current_project} key={current_project.title} />
 			))}
@@ -44,16 +49,18 @@ function Project(props) {
 	//console.log(outline);
 	return (
 		<Grid item xs={12} class= { outline }>
-			<Paper class="px-5 py-5  bg-white rounded-lg">
-				<div class="roboto text-left"> {props.project.title} </div>
-				<div class="roboto text-center"> {props.project.description} </div>
-				<Grid container spacing={3}>
-					<Grid item xs={1}>
-						<div class="roboto text-center"> Tags: </div>
+			<Paper class="px-5 py-5  bg-white rounded-lg text-xl">
+				<div class=" text-left font-bold"> {props.project.title} </div>
+				<div class="text-left mb-5"> {props.project.description} </div>
+				<Grid container clas="" spacing={1}>
+					<Grid item xs={2}>
+						<div class="text-left font-bold text-xl"> Techonologies used: </div>
 					</Grid>
+
 					{props.project.tags.map(current_tag => (
 						<Tag key={current_tag} tag={current_tag} />
 					))}
+
 				</Grid>
 			</Paper>
 		</Grid>
@@ -62,8 +69,8 @@ function Project(props) {
 
 function Tag(props) {
 	return (
-		<Grid item xs={1}>
-			<div style={{ backgroundColor: tags[props.tag] }} class="rounded-full text-center"> {props.tag} </div>
+		<Grid item xs={2} class=" px-2 my-auto" >
+			<div style={{ backgroundColor: tags[props.tag] }} class="px-3 py-auto text-white rounded-full text-center"> {props.tag} </div>
 		</Grid>
 	);
 }

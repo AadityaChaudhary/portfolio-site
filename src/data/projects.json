@@ -1,50 +1,57 @@
 [
 	{
-		"title" : "title",
-		"description" : " description",
-		"outline" : "from-green-400 to-blue-500",
-		"tags": ["Golang", "GraphQL"]
+		"title" : "Go-email",
+		"time" : "2020",
+		"description" : "Developed an open-source library that interfaces with various IMAP, SMTP, and OAuth implementations in Go, to facilitate email app development.",
+		"outline" : "from-red-400 to-yellow-500",
+		"tags": ["Golang"]
 	},
 	
 	{
-		"title" : "title",
-		"description" : " description",
-		"outline" : "from-green-400 to-blue-500",
-		"tags": ["Golang", "GraphQL"]
+		"title" : "Hornet Motor Controller",
+		"time" : "2020",
+		"description" : "Developed an open-source library that interfaces with various IMAP, SMTP, and OAuth implementations in Go, to facilitate email app development." ,
+		"outline" : "from-yellow-400 to-green-500",
+		"tags": ["C++", "Python"]
 	},
 	{
-		"title" : "title",
-		"description" : " description",
+		"title" : "Jubilee",
+		"time" : "2020",
+		"description" : "Developed a code-free automation tool for quality assurance website testing using the selenium web driver. This is a rewritten and improved version of the web testing tool that was developed for Inovex Inc. that uses JSON files to track commands such as clicking an element, entering text, scrolling to an element, etc.",
 		"outline" : "from-green-400 to-blue-500",
-		"tags": ["Golang", "GraphQL"]
-	},
-
-	{
-		"title" : "title",
-		"description" : " description",
-		"outline" : "from-green-400 to-blue-500",
-		"tags": ["Golang", "GraphQL"]
+		"tags": ["Golang"]
 	},
 
 	{
-		"title" : "title",
-		"description" : " description",
-		"outline" : "from-green-400 to-blue-500",
-		"tags": ["Golang", "GraphQL"]
+		"title" : "Quinoa",
+		"time" : "2020",
+		"description" : "Developed a smart personal scheduling app that learns from the user and suggests times to schedule events based on past decisions the user has made using machine learning. This was made for HackTheNortheast and won the machine learning prize.",
+		"outline" : "from-blue-400 to-indigo-600",
+		"tags": ["Flutter", "Dart", "Tensorflow"]
 	},
 
 	{
-		"title" : "title",
-		"description" : " description",
-		"outline" : "from-green-400 to-blue-500",
-		"tags": ["Golang", "GraphQL"]
+		"title" : "FRC Scouting App",
+		"time" : "2018-2020",
+		"description" : "Developed a data collection app to facilitate the recording, organizing, and uploading of scouting data gathered by FRC teams. Data was collected on an app made in a flutter, and uploaded to a Firebase NoSql database, and organized using Firebase Functions written in Javascript. The App was later modified to use QR codes to transfer data and SQLite databases to store data.",
+		"outline" : "from-indigo-400 to-pink-500",
+		"tags": ["Flutter", "Dart", "JavaScript", "SQL", "Firebase"]
 	},
 
 	{
-		"title" : "title",
-		"description" : " description",
-		"outline" : "from-green-400 to-blue-500",
-		"tags": ["Golang", "GraphQL"]
+		"title" : "Spaceapps competition submission",
+		"time" : "2020",
+		"description" : "Developed the front end for a site that uses Machine Learning topredict whether a city will be a covid hotspot given certain parameters. Also did data collection for the ML model, and worked on the python backend",
+		"outline" : "from-pink-400 to-red-500",
+		"tags": ["Flutter", "Python"]
+	},
+
+	{
+		"title" : "FRC Robot",
+		"time" : "2017-2020",
+		"description" : "Developed code for 3 125 lb robots that competes in FRC competitions. The 2020 robot uses PIDF and computer vision to accurately shoot balls into an 8 foot high target. It was able to pickup and automatically indexballs, and rotate a colour wheel a specific number of times using a colour sensor.",
+		"outline" : "from-red-400 to-blue-500",
+		"tags": ["Java"]
 	}
 
 ]

@@ -1,13 +1,14 @@
 {
-	"Golang": "blue",
-	"GraphQL": "yellow",
-	"C++": "green",
-	"Python": "cyan",
-	"Java": "magenta",
-	"Flutter": "cyan",
-	"JavaScript": "green",
-	"Mongodb": "green",
-	"Dart": "green",
-	"Firebase": "green",
-	"SQL": "green"
+	"Golang": "#56A3A6",
+	"GraphQL": "#4F6D7A",
+	"C++": "#006BA6",
+	"Python": "#DB504A",
+	"Java": "#084C61",
+	"Flutter": "#0496FF",
+	"JavaScript": "#D81159",
+	"Mongodb": "#8F2D56",
+	"Dart": "#3C153B",
+	"Firebase": "#DB4C40",
+	"SQL": "#304D6D",
+	"Tensorflow": "#63ADF2"
 }
