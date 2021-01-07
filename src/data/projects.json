@@ -10,7 +10,7 @@
 	{
 		"title" : "Hornet Motor Controller",
 		"time" : "2020",
-		"description" : "Developed an open-source library that interfaces with various IMAP, SMTP, and OAuth implementations in Go, to facilitate email app development." ,
+		"description" : "Developing of a motor controller for brushed and brushless motors with features such as built-in PIDF feedback control, triangle, trapezoidal, and s-curve motion profile generation, and encoder feedback. It can interface with other devices using UART and CAN, and can be controlled via CAN or PWM." ,
 		"outline" : "from-yellow-400 to-green-500",
 		"tags": ["C++", "Python"]
 	},
