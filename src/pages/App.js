@@ -4,6 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import tags from '../data/tags.json';
 import god from '../assets/placeholder.png';
+import AboutButton from './about';
+import ProjectExpand from './projectExpand';
 
 function App(props) {
 
@@ -24,7 +26,10 @@ function App(props) {
 		  			</Grid>
 		   		
 		  			<Grid item xs={8} className="px-6 py-6">
-		  				<Paper className="text-center"> description </Paper>
+		  				<Paper className="text-center"> 
+		  					description 
+		  					<AboutButton />
+		  				</Paper>
 		  			</Grid>
 		  		</Grid>
 		  		<Grid item xs={12}>
@@ -49,9 +54,10 @@ function Project(props) {
 	//console.log(outline);
 	return (
 		<Grid item xs={12} class= { outline }>
-			<Paper class="px-5 py-5  bg-white rounded-lg text-xl">
+			<Paper class="px-5 py-5 bg-white rounded-lg text-xl">
 				<div class=" text-left font-bold"> {props.project.title} </div>
 				<div class="text-left mb-5"> {props.project.description} </div>
+
 				<Grid container clas="" spacing={1}>
 					<Grid item xs={2}>
 						<div class="text-left font-bold text-xl"> Techonologies used: </div>
@@ -60,6 +66,12 @@ function Project(props) {
 					{props.project.tags.map(current_tag => (
 						<Tag key={current_tag} tag={current_tag} />
 					))}
+
+					<Grid item xs={12}>
+						<div class="float-right">
+							<ProjectExpand proj={props.project.expanded} />
+						</div>
+					</Grid>
 
 				</Grid>
 			</Paper>
