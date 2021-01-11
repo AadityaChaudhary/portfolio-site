@@ -1,11 +1,11 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid'; 
 import tags from '../data/tags.json';
-import god from '../assets/placeholder.png';
-import AboutButton from './about';
+import header from '../data/header.jpg';
 import ProjectExpand from './projectExpand';
+import mainInfo from '../data/mainInfo.json';
+import Container from '@material-ui/core/Container';
 
 function App(props) {
 
@@ -15,25 +15,39 @@ function App(props) {
 			<Grid container spacing={3}>
 				<Grid item xs={12} className="bg-gradient-to-r from-green-400 to-blue-500 mx-5 my-5 rounded-lg">
 					<Paper className="text-left px-6 py-6"> 
-		  				<div className="text-6xl">
-		  					Aaditya Chaudhary 
+		  				<div className="potta text-6xl">
+		  					{mainInfo.name}
 		  				</div>
 		  			</Paper>
 		  		</Grid>
 		  		<Grid container spacing={0} className="bg-gradient-to-r from-red-400 to-yellow-500 rounded-lg my-5 ">
 		  			<Grid item xs={4} className="px-6 py-6">
-						<img src={god} alt="me"  class="rounded-3xl " />
+						<img src={header} alt="me"  class="rounded-3xl " />
 		  			</Grid>
 		   		
 		  			<Grid item xs={8} className="px-6 py-6">
-		  				<Paper className="text-center"> 
-		  					description 
-		  					<AboutButton />
+		  				<Paper class="bg-white text-lg text-left px-6 py-6 rounded-3xl"> 
+
+		  					<div class="text-2xl font-bold px-2 pt-2 pb-2 potta"> About Me </div>
+
+		  					{mainInfo.descs.map(desc => (
+								<div class="py-2 px-5"> {desc} </div>
+							))}
+							
+		  					<div class="text-2xl font-bold px-2 pt-5 pb-2 potta"> Links </div>
+
+		  					{mainInfo.links.map(link => (
+								<div class="text-xl px-5 py-2">
+									{link.txt}:
+										
+									<a href={link.link} class="bg-indigo-500 rounded-full px-5 mx-6 text-white"  > -> </a> 	
+								</div>	
+							))}
 		  				</Paper>
 		  			</Grid>
 		  		</Grid>
 		  		<Grid item xs={12}>
-		  			<Paper class="font-bold text-3xl px-5 py-4 rounded-lg bg-white">
+		  			<Paper class="potta font-bold text-3xl px-5 py-4 rounded-lg bg-white">
 		  				Projects:	
 		  			</Paper>
 		  		</Grid>

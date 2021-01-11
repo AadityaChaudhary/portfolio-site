@@ -52,33 +52,47 @@ function DispProjContent(props) {
 	} else if( "desc" in props.current_proj) {
 		//text
 		return (<Desc desc={props.current_proj.desc} />); 
+	} else if ( "link" in props.current_proj && "txt" in props.current_proj) {
+		//link
+		return (<LinkAndDesc link={props.current_proj.link} txt={props.current_proj.txt} />);
 	} else {
 			console.log("reeeee");
-			return <div> monkey </div>;
+		//	return <div> monkey </div>;
+			return null;
 	}
 
 }
 
 function Title(props) {
 	return (
-		<div class="text-3xl font-bold px-5 py-4"> {props.title} </div>				
+		<div class="text-4xl font-bold px-5 py-4"> {props.title} </div>				
 	);
 }
 
 function Subheading(props) {
 	return (
-		<div class="text-xl font-bold px-5 py-4"> {props.subheading} </div>				
+		<div class="text-2xl font-bold px-5 py-4"> {props.subheading} </div>				
 	);
 }
 
 function Desc(props) {
 	return (
-		<div class="px-5 py-4"> {props.desc} </div>
+		<div class="text-lg px-5 py-4"> {props.desc} </div>
 	);
 }
 
 function Image(props) {
 	return (
 		<img src={props.src} alt={props.alt} className="rounded-3xl mx-auto my-6" />
+	);
+}
+
+function LinkAndDesc(props) {
+	return (
+		<div class="text-xl px-5 py-4">
+			{props.txt}:
+				
+			<a href={props.link} class="bg-indigo-500 rounded-full px-5 mx-6 text-white"  > -> </a> 	
+		</div>	
 	);
 }

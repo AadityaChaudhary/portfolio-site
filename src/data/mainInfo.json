@@ -1,0 +1,14 @@
+{
+	"name": "Aaditya Chaudhary",
+	"descs": [
+			"Hello, World! I'm Aaditya Chaudhary, a first year Mechatronics Engineering student at the University of Waterloo. ",
+			"I'm fascinated by the rapidly evolving field of robotics and automation and have participated in some form of robotics over the past 4 years. For 3 years I was on FIRST Robotics team 1360, where I lead the software subteam. This year, I'm working on the firmware team of the University of Waterloo Aerial Robotics Group."
+	],
+	"links" : [
+			{"link": "https://github.com/AadityaChaudhary", "txt" : "Github"},
+			{"link": "https://www.linkedin.com/in/aaditya-chaudhary-a79134187/", "txt" : "Linkedin"},
+			{"link": "https://devpost.com/AadityaChaudhary", "txt" : "Devpost"}
+	],
+	"header": "../data/header.jpg",
+	"header_alt": "me"
+}
