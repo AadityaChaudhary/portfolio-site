@@ -92,7 +92,7 @@ function LinkAndDesc(props) {
 		<div class="text-xl px-5 py-4">
 			{props.txt}:
 				
-			<a href={props.link} class="bg-indigo-500 rounded-full px-5 mx-6 text-white"  > -> </a> 	
+			<a href={props.link} target="_blank" rel="noreferrer" class="bg-indigo-500 rounded-full px-5 mx-6 text-white"  > -> </a> 	
 		</div>	
 	);
 }

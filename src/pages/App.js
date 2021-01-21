@@ -40,7 +40,7 @@ function App(props) {
 								<div class="text-xl px-5 py-2">
 									{link.txt}:
 										
-									<a href={link.link}  target="_blank" class="bg-indigo-500 rounded-full px-5 mx-6 text-white"  > -> </a> 	
+									<a href={link.link}  target="_blank" rel="noreferrer" class="bg-indigo-500 rounded-full px-5 mx-6 text-white"  > -> </a> 	
 								</div>	
 							))}
 		  				</Paper>
