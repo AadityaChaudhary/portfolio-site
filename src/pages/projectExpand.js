@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import Grid from '@material-ui/core/Grid';
+import Youtube from 'react-youtube';
 
 export default function ProjectExpand(props) {
 	const [open, setOpen] = React.useState(false);	
@@ -55,10 +56,13 @@ function DispProjContent(props) {
 	} else if ( "link" in props.current_proj && "txt" in props.current_proj) {
 		//link
 		return (<LinkAndDesc link={props.current_proj.link} txt={props.current_proj.txt} />);
+	} else if ("id" in props.current_proj) {
+		//link
+		return (<Video id={props.current_proj.id}/>);
 	} else {
-			console.log("reeeee");
-		//	return <div> monkey </div>;
-			return null;
+		console.log("reeeee");
+		//return <div> monkey </div>;
+		return null;
 	}
 
 }
@@ -83,7 +87,7 @@ function Desc(props) {
 
 function Image(props) {
 	return (
-		<img src={props.src} alt={props.alt} className="rounded-3xl mx-auto my-6" />
+		<img src={`/images/${props.src}`} alt={props.alt} className="rounded-3xl mx-auto px-24 my-6" />
 	);
 }
 
@@ -94,5 +98,11 @@ function LinkAndDesc(props) {
 				
 			<a href={props.link} target="_blank" rel="noreferrer" class="bg-indigo-500 rounded-full px-5 mx-6 text-white"  > -> </a> 	
 		</div>	
+	);
+}
+
+function Video(props) {
+	return (
+		<Youtube videoId={props.id} className="rounded-3xl mx-auto my-6" />
 	);
 }

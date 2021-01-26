@@ -27,6 +27,7 @@
 		"tags": ["C++", "Python"],
 		"expanded": [
 			{"title" : "Hornet Brushed and Brushless Motor Controller"},
+			{"src" : "hornet/OpenCase.JPG", "alt": "Expanded view of the controller"},
 			{"subheading": "Purpose"},
 			{"desc": "The purpose of this project was to create a motor controller that can be used to drive both brushed and brushless motors, perform PIDF feedback control, generate motion profiles and interface over CAN, PWM, and UART. We wanted to replicate and build on features that we used in FRC with controllers like the Spark MAX and the CTRE Talon."},
 			{"subheading": "Features"},
@@ -35,6 +36,9 @@
 			{"subheading": "Future features"},
 			{"desc" : "Software features that we need to implement include the brushless driver and the state machine that controls the motor and makes use of the drivers. Another software improvement is support for S-curve motion profiles, the algorithm for which is currently in development"},
 			{"desc" : "Hardware updates that we are looking into for version 2, include using a lower cost chip and adding another CAN line to the board so that the controller can be daisy chained over can."},
+			{"subheading":"Images"},
+			{"src" : "hornet/AngledView.JPG", "alt": "Angled view of the controller"},
+			{"src" : "hornet/TopView.JPG", "alt": "Top view of the controller"},
 			{"subheading":"Links"},
 			{"link" : "https://github.com/sahil-kale/MotorController" , "txt" : "Github Link"}
 		]
@@ -66,6 +70,7 @@
 		"tags": ["Flutter", "Dart", "Tensorflow"],
 		"expanded": [
 			{"title" : "Quinoa"},
+			{"id": "qlY9JKgkDwM"},
 			{"subheading" : "Purpose"},
 			{"desc" : "Quinoa is a personal assistant scheduling app that can automatically schedule events according to user preferences. It does this by learning what times the user would like to schedule specific events with a custom machine learning model designed specifically to learn how to schedule events over time."},
 			{"subheading" : "Features" },
@@ -95,7 +100,11 @@
 			{"subheading": "Scouting app V1"},
 			{"desc" : "The first version of the system was written in Flutter and used Firebase to store the scouting data. Two apps were made, a scouter app and a head scouter app. The standard scouter app basically opened a form that allowed the scouter to enter in details from the match and team they were scouting. They could then hit a submit button to upload the data to the database. The head scouter app retrieved data from the firebase database. The head scouter app could also sort the data based on specific values, like points scored, team number, match number, etc. This app was used in the strategy meetings to help choose teams for the alliance. It was also used by drivers to quickly pull up information on the teams they would be facing in the next match."},
 			{"subheading": "Scouting app V2"},
-			{"desc" : "The second version of the system had massive changes. First of all, we removed firebase from the system. This is because we would be relying on scouters cell phone plans to send the data to the cloud database. When we went to the world championships in detroit, almost none of our team members had data. We would also hit our quotas and that resulted in loss of data.  V2 of the app used SQLite to store the data directly on the phones, and QR codes were used to pass the scouting data from scouters to the head scouter. We also only had 1 app, rather than a separate scouter and head scouter app. If data had to be sent over long distances (for example, from the scouters to the robot driveteam), the data could be exported as text and sent in an email or instant message. The receiving person could just copy that text into their scouting app and to get all the data. Besides these changes, the base functionality of the app was kept the same."}	
+			{"desc" : "The second version of the system had massive changes. First of all, we removed firebase from the system. This is because we would be relying on scouters cell phone plans to send the data to the cloud database. When we went to the world championships in detroit, almost none of our team members had data. We would also hit our quotas and that resulted in loss of data.  V2 of the app used SQLite to store the data directly on the phones, and QR codes were used to pass the scouting data from scouters to the head scouter. We also only had 1 app, rather than a separate scouter and head scouter app. If data had to be sent over long distances (for example, from the scouters to the robot driveteam), the data could be exported as text and sent in an email or instant message. The receiving person could just copy that text into their scouting app and to get all the data. Besides these changes, the base functionality of the app was kept the same."},	
+			{"subheading" : "Images"},
+			{"src" :"scouting_app/scouting_app_1.jpg", "alt" : "main menu of scouting app V2"},
+			{"src": "scouting_app/scouting_app_2.jpg", "alt":"scouting form in scouting app V2"},
+			{"src": "scouting_app/scouting_app_3.jpg", "alt":"QR code generation in scouting app V2"}
 		]
 	},
 
@@ -111,6 +120,9 @@
 			{"desc" : "The point of the competition was to utilize data gathered by different government agencies (such as NASA) to aid with the covid outbreak in some way. My team decided to make a website that could predict if your town will become a covid hotspot based on past data of covid hotspots."},
 			{"subheading": "Features"},
 			{"desc" : "The website was written with flutter, and asked the user for information about their city. These values would be sent to a flask server where they would be passed into a classifier trained using data provided by different government agencies (as well as data we manually collected). The flask server would then return whether it was likely that the city would become a covid hotspot or not."},
+			{"subheading": "Images"},
+			{"src" : "spaceapps/pic1.png", "alt" : "main menu screen"},
+			{"src" : "spaceapps/pic2.png", "alt" : "after submitting data on your city"},
 			{"subheading":"Links"},
 			{"link": "https://github.com/AadityaChaudhary/space_apps", "txt": "Github Link"}	
 		]
@@ -128,13 +140,16 @@
 			{"desc" : "In 2020, I was the programming advisor and helped to design and implement the software for the robot. In 2020, the robot had to intake small balls and shoot them at a target 8 feet in the air. It also had to rotate a color wheel and hang off of a tilted bar. Our robot in 2020 had a turret and shooter system, a drivetrain, an intake. I played a part in the development and testing of each of these systems and also played a part in their integration."},
 			{"desc" : "For the turret and shooter system we used a vision camera called LimeLight to identify the target 8 feet up. Using PID we were able to rotate the turret horizontal to face the target. Then. using the size of the target from the vision camera we were able to build a relation between the size of the target in the camera and the distance to the target. We were also able to find a relationship between the distance to the target and the required speed and vertical angle required to hit the target. Using these two systems we were able to build an automatic targeting system that could auto adjust as the robot was moving and accurately hit their target."},
 		    {"desc" : " For the color wheel mechanism we used a colour sensor connected to the robot using I2C to detect the number of rotations the color had moved, as well as the current color that the wheel was on."},
+			{"id" :"IZz9S-v6No0"},
 			{"subheading" : "2019"},
 			{"desc" : "In 2019 I was the programming lead and organized and ran the design subteam. I lead the overall design of the software and aided with the implementations of the software. I was responsible for the testing as well as the fixes to the software (sometimes requiring complete redesigns of the subsystems). The robot in 2019 had to pick up discs and large balls and put them in tall towers. "},
 			{"desc" : "To accomplish this task, the robot had 4 main components that had to work together: the drivetrain, the vision camera, the 2 stage cascade elevator, and then claw. Due to poor visibility on the field, a lot of the actions the robot had to accomplish such as picking up discs from the “loading station” and placing them on their appropriate target, or putting balls in the appropriate target had to be automated using computer vision. I implemented a “driver assist” that allowed the robot to drive into the target, using the vision target. It used a PID feedback controller to keep the robot angled at the target as the driver drove in. Further on in the season, I decided to completely automate those tasks. I logged and compared the input from the vision target with the distance from the target, to build a relationship between the two. That allowed me to develop software that automatically drove the robot to the target, complete an action (such as scoring a disc) and and then drive away. This completely removed driver involvement in game actions and allowed the robot to score points faster than the drivers could, with very few errors. "},
 			{"desc" : "The elevator was made using the built in motion profiling on our motor controllers as well as velocity PID. We found the necessary setpoints required of the elevator and allowed the drivers to join to those setpoints. We also gave the drivers manual control of the elevator, using position PID. This is because the elevator was extremely fast, so running it without some kind of feedback control was risky, as it could damage the system. We developed quite a few failsafes like that into the robot, so that the drivers didn’t need to worry about damaging the robot or operating it incorrectly. For example we noticed that the robot started to jerk around and begin tipping over if the elevator was at max height. So we added in software to limit the max speed of the robot based on the height of the elevator. We also added open loop ramps on the drive train to reduce jerking around or tipping over when the drivers stopped abruptly."},
+			{"id" : "IsV1zJPFJCo"},
 			{"subheading" : "2018"},
 			{"desc" : "In 2018, I was a member of the software subteam on my robotics team. I was responsible for developing and maintaining software for a single subsystem. The game that year required the robot to pick up cubes from the ground and drop them into a tall scale as well as two small scales."},
-			{"desc" : "The subsystem I was responsible for was the 2 stage cascading elevator. I implemented a state machine that managed the elevators change in state as it was going from one set point to another. I used PID to accurately get the elevator to go to its targets."}	
+			{"desc" : "The subsystem I was responsible for was the 2 stage cascading elevator. I implemented a state machine that managed the elevators change in state as it was going from one set point to another. I used PID to accurately get the elevator to go to its targets."},
+			{"id" : "UbJgmk7SWtg"}
 		]
 	}
 
